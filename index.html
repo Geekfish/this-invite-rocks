@@ -1,0 +1,121 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="initial-scale=1.0">
+  <title>It's a trap!</title>
+  <link href="http://fonts.googleapis.com/css?family=Vollkorn:400" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="css/standardize.css">
+  <link rel="stylesheet" href="css/index-grid.css">
+  <link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" href="css/animate.css">
+</head>
+<body class="body page-index clearfix">
+  <div id="intro" class="intro intro-1">
+    <div id="intro-inner" class="intro-inner clearfix">
+      <img class="faces wow fadeIn" data-wow-duration="2s" alt="our silly faces" src="images/serious_web_sepia.jpg">
+      <img class="deco wow fadeInDown" data-wow-duration="5s" alt="decoration" src="images/wed_decoration.png">
+      <img class="envelope wow fadeIn" data-wow-duration="4s" alt="envelope" src="images/invite.jpg">
+      <div id="intro-container" class="intro-text">
+        <p class="intro">This is<br><span>(not)</span><br>a serious<br>wedding<br>invitation...</p>
+      </div>
+    </div>
+      <div class="nyan scrollme animateme"
+           data-when="enter" data-from="0.8" data-to="0.2" data-opacity="0.8" data-easein="easeout" data-translatex="-1200"
+              ></div>
+  </div>
+  <div class="doge clearfix">
+    <p class="text very-wedding scrollme animateme"
+       data-when="enter" data-from="0.8" data-to="0" data-opacity="0"
+       data-rotatex="90" data-rotatez="90"
+            >VERY WEDDING</p>
+    <p class="text red-wow scrollme animateme"
+       data-when="enter" data-from="0.8" data-to="0" data-opacity="0"
+       data-scale="4"
+            >WOW</p>
+    <p class="text very-official scrollme animateme"
+       data-when="enter" data-from="0.5" data-to="0" data-opacity="0"
+       data-easein="easeinout" data-translatex="-1000"
+            >MUCH OFFICIAL</p>
+    <p class="text such-invite blink">SUCH INVITE ✉</p>
+  </div>
+  <div class="kittypattern">
+      <div class="lolpear scrollme animateme"
+           data-when="enter" data-from="0.9" data-to="0.3" data-opacity="1" data-translatex="1200"
+              >
+          <img class="lolwut" src="images/lolwut.png">
+          <span class="text-no-float meme inline">LOLWUT?</span>
+      </div>
+
+      <div class="info">
+          <div class="infosec">
+            <h2>Dear <span class="invitee-placeholder"></span></h2>
+            <p>...this is a real wedding invitation!</p>
+            <p>We (Alex and Eleni) would ❤ it if you and the rest of our best friends<br>
+                would join us for the occasion!</p>
+          </div>
+          <div class="infosec">
+              <h2>👰 CEREMONY?  👰</h2>
+              <p>Time and date: <br><b>18th March 2016, 15:00</b></p>
+              <p>Place: <br><b>Passmore Edwards Building, 207 Plashet Grove, E6 1BT</b><br>
+                  ...in case you get lost, but the plan is to all gather and go together<br>
+                      (probably on a fancy bus 🚌 )!</p>
+          </div>
+          <div class="infosec">
+              <h2>🎁 WEDDING GIFTS 🎁</h2>
+              <p>In the wake of 2016 we find ourselves in a pretty prosperous situation:<br>
+              We are not rich (yet!) but we're having a nice, comfortable life!</p>
+              <p>For that we would like to forfeit traditional wedding gifts<br>
+                  and ask anyone who was considering get us presents<br>
+                  to <b>DONATE</b> to <b><a href="http://www.msf.org.uk/">Doctors Without Borders (MSF)</a></b>
+              </p>
+              <p>The impact of such donations would mean a lot to us!</p>
+          </div>
+          <div class="infosec">
+              <h2>🎉🎊 WAIT - THERE IS MORE! 🎉🎊 </h2>
+              <p>We're still working on the details, but get ready to join us <br>as we roll around <b>London</b>
+                  and engage in <b>silliness of all sorts </b><br>(which we have in abundance judging from this invite).
+              </p>
+              <img style="width: 200px" src="https://media.giphy.com/media/K9CP0B0QLJk8U/giphy.gif">
+          </div>
+          <div class="infosec">
+              <h2>👍 I'M IN - WHAT DO I DO? 👍</h2>
+              <p>If you haven't confirmed you're coming already<br> please contact one of us and let us know!</p>
+              <p>Here's our <b>contact details </b>should they come handy:</p>
+              <p>Eleni:  <a href="mailto:contact@eleni.co">contact@eleni.co</a> | +44 7765 842 515</p>
+              <p>Alex:  <a href="mailto:alexandra.papageorgiou@gmail.com">alexandra.papageorgiou@gmail.com</a> | +44 7903 388 106</p>
+          </div>
+          <div class="infosec last-thing">
+              <h2 class="wow zoomInDown" data-wow-duration="2s" >ONE LAST THING...</h2><br>
+              <p class="wow fadeInUpBig" data-wow-duration="5s"><b>We can't wait to see you!!!</b></p>
+              <img class="kitty_wedding wow fadeInUpBig" data-wow-duration="5s" src="images/kitty_wedding_small.png">
+          </div>
+      </div>
+  </div>
+
+  <script src="js/jquery-min.js"></script>
+  <script src="js/jquery.scrollme.min.js"></script>
+  <script src="js/wow.js"></script>
+  <script src="http://twemoji.maxcdn.com/twemoji.min.js"></script>
+
+  <script>
+      new WOW().init();
+      window.onload = function() {
+          // Set the size of the rendered Emojis
+          // This can be set to 16x16, 36x36, or 72x72
+          twemoji.size = '16x16';
+
+          // Parse the document body and
+          // insert <img> tags in place of Unicode Emojis
+          twemoji.parse(document.body);
+
+      };
+      $(function(){
+          if(window.location.hash) {
+              var hash = window.location.hash.substring(1);
+              $('.invitee-placeholder').text(hash + ',')
+          }
+      })
+  </script>
+</body>
+</html>
