@@ -112,7 +112,7 @@
       };
       $(function(){
           if(window.location.hash) {
-              var hash = window.location.hash.substring(1);
+              var hash = decodeURIComponent(window.location.hash.substring(1));
               $('.invitee-placeholder').text(hash + ',')
           }
       })
